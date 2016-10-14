@@ -31,7 +31,7 @@ function coinCounter (dollars) {
 
   // console.log(coinPurse);
  // -= (coinPurse.quarters * .25) - coinPurse.dimes - coinPurse.nickels - coinPurse.pennies)       ignore this line
-  for (var i = dollars; i >= 0.01; i += 0) {
+  for (var i = dollars; i > 0.005; i += 0) {
     if (i >= quarter) {
       coinPurse.quarters += 1;
       i -= 0.25;
@@ -104,4 +104,16 @@ console.log("coins", coins);
 var dollarInput = 3.99;
 console.log("Dollar Input = $", dollarInput);
 var coins = coinCounter(dollarInput);
-console.log("coins", coins);
+console.log("coins", coins);  
+
+
+
+
+
+
+
+
+var dollarInput = 90.99;
+console.log("Dollar Input = $", dollarInput);
+var coins = coinCounter(dollarInput);
+console.log("coins", coins);  
